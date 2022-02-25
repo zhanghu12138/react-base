@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./01-base/11-prop-types";
+import App from "./02-advanced/06-插槽";
 
 ReactDOM.render(
   <React.StrictMode>

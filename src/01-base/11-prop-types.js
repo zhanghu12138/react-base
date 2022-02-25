@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import NavBar from "./navbar";
+import SideBar from "./sideBar";
 
 
 
@@ -13,6 +14,7 @@ class App extends Component{
         <NavBar title="第一个"></NavBar>
         <NavBar title="第二个"></NavBar>
         <NavBar title="第三个" leftShow={false}></NavBar>
+        <SideBar bg="yellow"></SideBar>
         <input ref={this.myRef}></input>
         <button onClick={()=>{this.setState({text:"取消收藏"})}}>{this.state.text}</button>
       </div>
