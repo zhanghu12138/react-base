@@ -16,6 +16,7 @@ class Child extends Component{
 class App extends Component{
   componentWillMount(){
     console.log('1233');
+    console.log('1233');
     
   }
   render() {
