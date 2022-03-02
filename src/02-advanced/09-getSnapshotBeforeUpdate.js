@@ -30,12 +30,9 @@ class App extends Component{
     return box
     
   }
-  componentDidUpdate(prevProps, prevState,skjadksa) {
+  componentDidUpdate(_prevProps, prevState,skjadksa) {
     console.log(this.myRef.current.scrollHeight);
-    
     console.log(skjadksa);
-    
-    
   }
 }
 
