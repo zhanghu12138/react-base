@@ -5,7 +5,7 @@ class Box extends Component{
   //   // if()
   // }
   render() {
-    console.log('render');
+    // console.log('render');
     
     return (
       <div>
@@ -13,9 +13,9 @@ class Box extends Component{
       </div>
     )
   }
-  componentWillUnmount() {
-    console.log(123333)
-  }
+  // componentWillUnmount() {
+  //   console.log(123333)
+  // }
   static getDerivedStateFromProps(nextProps, prevState) {
     console.log('nextProps',nextProps);
     // console.log('props',this.props);
@@ -30,7 +30,7 @@ class Test extends Component{
   //   // if()
   // }
   render() {
-    console.log('render');
+    // console.log('render');
     return (
       <div>
         {this.props.current}
@@ -46,9 +46,15 @@ class Test extends Component{
     console.log('prevState',prevState);
     
   }
-  componentDidUpdate(prevProps){
+  // componentDidUpdate(prevProps){
 
-  }
+  //   console.log('componentDidUpdate');
+  // }
+
+  // getSnapshotBeforeUpdate(){
+  //   console.log('getSnapshotBeforeUpdate');
+    
+  // }
 }
 
 // 控制移除
@@ -69,7 +75,15 @@ class App extends Component{
     }
     return false
   }
-  
+  componentDidUpdate(prevProps){
+
+    console.log('componentDidUpdate');
+  }
+
+  getSnapshotBeforeUpdate(){
+    console.log('getSnapshotBeforeUpdate');
+    return null
+  }
   render() {
     console.log('render');
     
